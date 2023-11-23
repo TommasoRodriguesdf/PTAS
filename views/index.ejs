@@ -14,6 +14,7 @@
    <% } %>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    
     <div class="container-fluid">
       <a class="navbar-brand" href="#">LOJA de ADOSAU de ANIMAIS seuvaseis</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,17 +49,19 @@
 </nav>
 
 
-
   <div class="container text-center">
+    <% for (let produto of produtos) { %>
     <div class="row">
       <div class="col">
-        <img src="foga.png" class="img-fluid" alt="">
+        <img src= <%= produto.imagem %> 
           <div class="card-body">
-            <h5 class="card-title">Foca fofa</h5>
-            <p class="card-text">Esses animais possuem uma camada de gordura que envolve todo o seu corpo, funcionando como um isolante térmico</p>
-            <a href="produto" class="btn btn-primary stretched-link">clicar</a>
+            <h5 class="card-title"><%= produto.nome %></h5>
+            <p class="card-text"><%= produto.descricao %></p>
+            <a href="produto" class="btn btn-primary stretched-link">/produto/1</a>
           </div>
       </div>
+      <% } %>
+      <!--
       <div class="col">
         <div class="card">
           <img src="banda.png" class="img-fluid" alt="">
@@ -91,7 +94,7 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="banda.png" class="img-fluid" alt="">
+          <img src="raposa.jpg" class="img-fluid" alt="">
           <div class="card-body">
             <h5 class="card-title">Banda vermelho fofo</h5>
             <p class="card-text">O panda-vermelho é um animal solitário que possui cabeça redonda, focinho curto e orelhas triangulares. Seu pelo marrom tem um aspecto avermelhado</p>
@@ -101,9 +104,9 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="esquilo.png" class="img-fluid" alt="">
+          <img src="oxolote.peg.jpeg" class="img-fluid" alt="">
           <div class="card-body">
-            <h5 class="card-title">Esquilo fofo</h5>
+            <h5 class="card-title">oxolote fofo</h5>
             <p class="card-text">Sua família comprende os esquilos arborícolas</p>
             <a href="produto" class="btn btn-primary stretched-link">clicar</a>
           </div>
@@ -112,7 +115,7 @@
     </div>
   </div>
 
-
+-->
 
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
