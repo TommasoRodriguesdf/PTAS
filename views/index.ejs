@@ -55,7 +55,8 @@
           <div class="card-body">
             <h5 class="card-title"><%= produto.nome %></h5>
             <p class="card-text"><%= produto.descricao %></p>
-            <a href="/produtos/<%= produto.id %>" class="btn btn-primary stretched-link">clique</a>
+            <p class="card-text"><%= produto.preco %></p>
+            <a href="/produtos/<%= produto.id %>" class="btn btn-primary stretched-link">adotar</a>
           </div>
       </div>
       <% } %>
